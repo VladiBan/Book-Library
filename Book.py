@@ -15,7 +15,7 @@ if st.button("Add book"):
         "author": author,
         "price": price 
     }
-    st.session_state.books.apend(book)
+    st.session_state.books.append(book)
     st.success("Book is added")
 if len(st.session_state.books) == 0:
     st.write("No added books")
@@ -58,5 +58,6 @@ if st.button("show the cheapest"):
                 cheapest = book
                 st.write("The cheapest book is ")
                 st.write(cheapest)
+
 
 
