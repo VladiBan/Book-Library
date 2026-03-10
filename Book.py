@@ -21,10 +21,10 @@ if len(st.session_state.books) == 0:
     st.write("No added books")
 else: 
     for book in session_state.books:
-    st.write("Title", book["title"])
-    st.write("Author", book["author"])
-    st.write("Price", book["price"])
-    st.write("-------------------")
+        st.write("Title", book["title"])
+        st.write("Author", book["author"])
+        st.write("Price", book["price"])
+        st.write("-------------------")
 
     st.header("Author search")
     search_author = st.text_input("Enter authors name")
@@ -59,6 +59,7 @@ if st.button("show the cheapest"):
                 cheapest = book
                 st.write("The cheapest book is ")
                 st.write(cheapest)
+
 
 
 
